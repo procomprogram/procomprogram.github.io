@@ -7,23 +7,16 @@ h3{
     text-align: center;
     margin: 0px;
 }
-.navbar {
-    width: auto;
-    height: 7%;
-}
 
 .navpic {
     width: 20%;
     height: auto;
 }
 
-.header-section {
-    height: 421px;
-}
-
 .mainpic {
     width: 100%;
     height: auto;
+    vertical-align: top;
 }
 
 .info {
