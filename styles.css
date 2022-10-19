@@ -8,22 +8,54 @@ h3{
     margin: 0px;
 }
 
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 .navpic {
     width: 20%;
+}
+
+.logo {
+    width: 100%;
+    vertical-align: top;
+}
+
+.navbar-text-it {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 2.5em;
+    color: rgb(103, 103, 103);
+}
+
+.navbar-text-sm {
+    margin-top: 5%;
+    padding-left: 45%;
+    color: rgb(151, 150, 150);
+}
+
+.header-section {
+    background-color: #009fe1;
     height: auto;
+    padding: 5%;
 }
 
 .mainpic {
-    width: 100%;
+    width: 66%;
     height: auto;
-    vertical-align: top;
+    display: block;
+    border: solid white 10px;
+    margin: 0 auto;
 }
 
 .info {
     text-align: center;
     background-color: #009fe1;
     color: white;
-    padding: 40px;
+    padding-bottom: 40px;
 }
 
 .info-title {
@@ -38,7 +70,9 @@ h3{
 
 .info-pic-section{
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 .info-pic {
@@ -56,28 +90,45 @@ h3{
 .brands {
     padding: 20px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
 }
 
 .link {
-    width: 100%;
+    width: 40%;
     margin-top: auto;
     margin-bottom: auto;
+    padding-right: 3em;
     padding-bottom:10px;
+}
+
+.web-address {
+    text-decoration: none;
+    color: rgb(143, 142, 142);
+    padding-right: 30%;
+    text-align: right;
+    margin-top: -2.5%;
+    padding-bottom: 2.5%;
 }
 
 .grid-text {
     display: flex;
-    flex-direction: column;
-    width: 40%;
-    text-align: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 75%;
+    text-align: left;
     align-items: center;
     text-decoration: none;
     color: rgb(143, 142, 142);
     padding: 2% 5%;
 }
+
+.grid-text span {
+    max-width: 50%;
+}
+
+
 
 .footer {
     text-align: left;
@@ -91,4 +142,5 @@ h3{
 .careers {
     text-decoration: none;
     color: white;
+    padding: 1%;
 }
