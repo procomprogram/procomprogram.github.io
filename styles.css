@@ -3,6 +3,10 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+p {
+    font-size: calc(15px + 0.390625vw);
+}
+
 h3{
     text-align: center;
     margin: 0px;
@@ -10,12 +14,19 @@ h3{
 
 .navbar {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
 }
 
-.navpic {
-    width: 20%;
+.navbar-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: -1% 0%;
+}
+
+.logo-link{
+    max-width: 30%;
 }
 
 .logo {
@@ -27,14 +38,14 @@ h3{
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
     font-weight: bold;
-    font-size: 2.5em;
+    font-size: calc(15px + 2vw);
     color: rgb(103, 103, 103);
+    vertical-align: top;
 }
 
 .navbar-text-sm {
-    margin-top: 5%;
-    padding-left: 45%;
     color: rgb(151, 150, 150);
+    padding-right: 2%;
 }
 
 .header-section {
@@ -55,12 +66,12 @@ h3{
     text-align: center;
     background-color: #009fe1;
     color: white;
-    padding-bottom: 40px;
+    padding-bottom: 1%;
+    margin-top: -2%;
 }
 
 .info-title {
     font-size:3em;
-    padding-bottom: 20px;
 }
 
 .info-text {
@@ -70,15 +81,16 @@ h3{
 
 .info-pic-section{
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
+    gap: 2%;
 }
 
 .info-pic {
-    width: 40%;
+    width: 35%;
     height: auto;
-    padding: 10px;
+    border: solid white 10px;
 }
 
 .brand-title {
@@ -128,8 +140,6 @@ h3{
     max-width: 50%;
 }
 
-
-
 .footer {
     text-align: left;
     background-color: #009fe1;
@@ -139,8 +149,82 @@ h3{
     justify-content: space-between;
 }
 
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    min-width: 60%;
+}
+
+.contact-font {
+    font-size: calc(8px + 0.6vw);
+}
+
 .careers {
     text-decoration: none;
     color: white;
-    padding: 1%;
+    padding: 1% 0;
 }
+
+@media only screen and (max-width: 768px) {
+    .grid-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        text-decoration: none;
+        color: rgb(143, 142, 142);
+    }
+
+    .link {
+        width: 100%;
+        margin-top: auto;
+        margin-bottom: auto;
+        padding-bottom:10px;
+        padding-right: 0em;
+    }
+
+    .grid-text span {
+        max-width: 80%;
+    }
+
+    .web-address {
+        text-decoration: none;
+        color: rgb(143, 142, 142);
+        padding-right: 0%;
+        text-align: center;
+        margin-top: 0;
+        padding-bottom: 2.5%;
+    }
+
+    .whitespace span {
+        margin-top: -2em;
+    }
+
+    .footer {
+        text-align: left;
+        background-color: #009fe1;
+        color: white;
+        padding: 2%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 60%;
+    }
+    
+    .contact-font {
+        font-size: 15px;
+    }
+
+    .careers {
+        padding-top: 2%;
+    }
+}
+
