@@ -41,6 +41,7 @@ h3{
     font-size: calc(15px + 2vw);
     color: rgb(103, 103, 103);
     vertical-align: top;
+    white-space: nowrap;
 }
 
 .navbar-text-sm {
@@ -179,7 +180,7 @@ h3{
 
 @media only screen and (max-width: 768px) {
     .navbar-text-sm {
-        font-size: 12px;
+        font-size: 10px;
         white-space: nowrap;
         margin-bottom: -3%;
     }
