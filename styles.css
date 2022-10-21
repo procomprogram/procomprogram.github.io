@@ -162,6 +162,8 @@ h3{
 
 .contact-font {
     font-size: calc(8px + 0.6vw);
+    color: white;
+    text-decoration: none;
 }
 
 .email-link {
@@ -211,6 +213,7 @@ h3{
         text-align: center;
         margin-top: 0;
         font-size: 20px;
+        color: rgb(105, 104, 104);
     } 
 
     .whitespace span {
