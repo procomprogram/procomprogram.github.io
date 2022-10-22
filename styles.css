@@ -189,6 +189,12 @@ h3{
         text-align: left;
     }
 
+    .info-pic {
+        width: 35%;
+        height: auto;
+        border: solid white 5px;
+    }
+
     .grid-text{
         display: flex;
         flex-direction: column;
