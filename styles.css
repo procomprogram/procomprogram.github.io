@@ -74,12 +74,11 @@ h3{
 }
 
 .info-title {
-    font-size:3em;
+    font-size: calc(25px + 1.5vw);
 }
 
 .info-text {
     padding: 0 3em;
-    font-size:20px;
 }
 
 .info-pic-section{
@@ -97,7 +96,7 @@ h3{
 }
 
 .brand-title {
-    font-size:3em;
+    font-size: calc(25px + 1.5vw);
     padding-top: 30px;
     color: rgb(143, 142, 142);
 }
@@ -179,6 +178,10 @@ h3{
 }
 
 @media only screen and (max-width: 768px) {
+    .info {
+        margin-top: 0;
+    }
+    
     .navbar-text-sm {
         font-size: 10px;
         white-space: nowrap;
